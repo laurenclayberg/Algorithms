@@ -8,5 +8,6 @@ t_4 = [7,2,4,8,9,-3,-6,-86,-4,-3,-67, 0.4, 100.4, -0.1, -100.89]
 tests = [t_1,t_2,t_3,t_4]
 
 for test in tests:
-    assert sort.insertion_sort(test) == sorted(test)
-    assert sort.merge_sort(test) == sorted(test)
+    assert sort.insertion_sort(test.copy()) == sorted(test.copy())
+    assert sort.merge_sort(test.copy()) == sorted(test.copy())
+    assert sort.heap_sort(test.copy()) == sorted(test.copy())
